@@ -1,0 +1,55 @@
+.work {
+    min-height: 620px;
+    padding: 51px 0 57px 0;
+    &__title {
+        color: $title-color;
+        font-size: 26px;
+        line-height: 23px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    &__divider {
+        @include divider;
+        margin-top: 20px;
+    }
+    &__subtitle {
+        margin: 0 auto;
+        margin-top: 17px;
+        max-width: 880px;
+        color: $title-color;
+        font-size: 21px;
+        line-height: 24px;
+        font-weight: 300;
+        text-align: center;
+    }
+    &__wrapper {
+        margin-top: 37px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__item {
+        max-width: 362px;
+        &-img {
+            img {
+                max-width: 360px;
+            }
+        }
+        &-title {
+            font-size: 18px;
+            line-height: 22px;
+            font-weight: 700;
+            text-align: center;
+            color: $main-color;
+            margin-top: 28px;
+        }
+        &-text {
+            margin: 10px 0 0 0;
+            color: $text-color;
+            font-size: 14px;
+            font-weight: 300;
+            text-align: justify;
+        }
+    }
+}

@@ -1,0 +1,53 @@
+@mixin focus {
+    &:focus {
+        outline: none;
+    }
+}
+@mixin hover {
+    transition: 0.4s;
+    &:hover {
+        background: $hower-color;
+        box-shadow: 0px 0px 25px $main-color;
+    }
+}
+@mixin active {
+    &:active {
+        background: $main-color-light;
+    }
+}
+@mixin btn_small {
+    @include focus;
+    @include hover;
+    @include active;
+    background: $main-color;
+    width: 160px;
+    height: 45px;
+    border-radius: 50px;
+    border: none;
+    color: $white-color;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+}
+@mixin btn_medium {
+    @include focus;
+    @include hover;
+    @include active;
+    @include btn_small;
+    width: 180px;
+    height: 45px;
+}
+@mixin btn_big {
+    @include focus;
+    @include hover;
+    @include active;
+    @include btn_small;
+    width: 230px;
+    height: 57px;
+}
+@mixin divider {
+    margin: 0 auto;
+    width: 148px;
+    height: 1px;
+    background: $main-color;
+}

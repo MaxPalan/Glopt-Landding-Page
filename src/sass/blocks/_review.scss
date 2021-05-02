@@ -1,0 +1,142 @@
+.review {
+    min-height: 470px;
+    padding: 51px 0 65px 0;
+    overflow-x: hidden;
+    &__title {
+        font-size: 26px;
+        line-height: 23px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        color: $title-color;
+    }
+    &__divider {
+        @include divider;
+        margin-top: 25px;
+    }
+    &__subtitle {
+        font-size: 21px;
+        line-height: 24px;
+        font-weight: 300;
+        margin-top: 17px;
+        color: $title-color;
+        text-align: center;
+    }
+    &__wrapper {
+        margin-top: 31px;
+        &-top {
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+        &-bot {
+            margin-top: 50px;
+            position: relative;
+        }
+    }
+    &__button {
+        position: relative;
+        z-index: 3;
+        background: none;
+        border: none;
+        width: 14px;
+        height: 46px;
+        margin: 0 80px;
+        margin-top: 35px;
+        img {
+            width: 14px;
+            height: 46px;
+        }
+        @include focus;
+    }
+    &__icon {
+        border-radius: 100%;
+        transition: all 1s;
+        img {
+            transition: all 1s;
+        }
+    }
+    &__text {
+        width: 605px;
+        height: 108px;
+        font-size: 14.1px;
+        font-weight: 300;
+        color: $text-color;
+        text-align: justify;
+        transition: all 1s;
+        &-title {
+            margin-bottom: 7px;
+            text-align: center;
+            font-size: 18px;
+            line-height: 22px;
+            font-weight: 700;
+            display: block;
+        }
+    }
+    .main {
+        position: absolute;
+        top: 0;
+        left: 45.5%;
+        right: 50%;
+        img {
+            width: 114px;
+            height: 114px;
+        }
+        &__text {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            right: 50%;
+            transform: translateX(-50%);
+            .review__text-title {
+                margin-bottom: 7px;
+            }
+        }
+    }
+    .left {
+        position: absolute;
+        left: 20px;
+        top: 50px;
+        opacity: 0.3;
+        img {
+            width: 67px;
+            height: 67px;
+        }
+        &__text {
+            position: absolute;
+            left: -130px;
+            top: -10px;
+            opacity: 0.3;
+            width: 361px;
+            font-size: 8.4px;
+            right: 0%;
+            transform: translateX(0%);
+            .review__text-title {
+                font-size: 14px;
+                margin-bottom: 3px;
+            }
+        }
+    }
+    .right {
+        position: absolute;
+        left: 1050px;
+        top: 50px;
+        opacity: 0.3;
+        img {
+            width: 67px;
+            height: 67px;
+        }
+        &__text {
+            position: absolute;
+            left: 900px;
+            top: -10px;
+            opacity: 0.3;
+            width: 361px;
+            font-size: 8.4px;
+            .review__text-title {
+                font-size: 14px;
+                margin-bottom: 3px;
+            }
+        }
+    }
+}

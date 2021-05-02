@@ -1,0 +1,54 @@
+.scheme {
+    min-height: 454px;
+    background-color: #f3f3f3;
+    padding: 51px 0 46px 0;
+    &__title {
+        font-size: 26px;
+        line-height: 23px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $title-color;
+        text-align: center;
+    }
+    &__wrapper {
+        &-top {
+            margin-top: 29px;
+            display: flex;
+            justify-content: space-between;
+        }
+        &-bot {
+            margin-top: 26px;
+            display: flex;
+            justify-content: center;
+            .scheme__item {
+                margin: 0 20px;
+            }
+        }
+    }
+    &__item {
+        width: 254px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-icon {
+            min-height: 57px;
+            img {
+                max-width: 61px;
+            }
+        }
+        &-title {
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 700;
+            color: $main-color;
+        }
+        &-descr {
+            margin-top: 5px;
+            font-size: 14px;
+            font-weight: 300;
+            text-align: center;
+            color: $text-color;
+        }
+    }
+}
